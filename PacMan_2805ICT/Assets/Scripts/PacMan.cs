@@ -139,8 +139,7 @@ public class PacMan : MonoBehaviour
         
 
         // Creating a game object within Pac Man script to call reference to squareBoard GameObject within GameBoard (specifically the GameObject stored at position)
-        GameObject tile = GameObject.Find("GameBoard").GetComponent<The_Board>().squareBoard[(int)position.x, (int)position.y];
-        Debug.Log(tile);
+        GameObject tile = GameObject.Find("GameBoard").GetComponent<The_Board>().Board[(int)position.x, (int)position.y];
         if (tile != null)
         {
             return tile.GetComponent<Node>(); //returns the tile Node that PacMan is currently located on
