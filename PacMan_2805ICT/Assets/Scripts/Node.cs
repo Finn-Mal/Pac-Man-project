@@ -10,6 +10,8 @@ public class Node : MonoBehaviour
     public Node[] Neighbours;
     public Vector2[] valid_Direction;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +28,9 @@ public class Node : MonoBehaviour
 
             valid_Direction[i] = tempVector.normalized;
 
-
         }
+
+        
         
     }
 
@@ -36,4 +39,6 @@ public class Node : MonoBehaviour
     {
         
     }
+
+    
 }

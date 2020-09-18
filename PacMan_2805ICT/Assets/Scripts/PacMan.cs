@@ -10,6 +10,8 @@ public class PacMan : MonoBehaviour
     private enum Direction {None, North, East, South, West };
     private Direction currentDirection;
 
+    private bool CanMove = false;
+
     public float move_speed = 4.0f;
 
     private Node currentNode; // node of Pacman's current position (which pellet Node is he on)

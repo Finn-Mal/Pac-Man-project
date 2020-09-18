@@ -28,11 +28,6 @@ public class The_Board : MonoBehaviour
 
 
 
-
-
-
-
-
             /*// an array the will store all objects (declared as GameObjects) that are present in current scene 
         Object[] boardObjects = GameObject.FindObjectsOfType(typeof(GameObject));
 
