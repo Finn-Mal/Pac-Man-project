@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Node_Pellet
+  - Pellets
   layers:
   - Default
   - TransparentFX
