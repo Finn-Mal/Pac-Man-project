@@ -124,7 +124,7 @@ public class Ghost : MonoBehaviour
                 currentscatterModePhase = scatterModePhaseHard;
             }
 
-            Debug.Log(currentMode);
+            //Debug.Log(currentMode);
         }
 
         else
@@ -152,6 +152,7 @@ public class Ghost : MonoBehaviour
         Vector2 targetTile = Vector2.zero; //Vector that will define the tile X Y position Pacman is in
         targetTile = new Vector2(Mathf.RoundToInt(Pacman.transform.position.x),Mathf.RoundToInt(Pacman.transform.position.y));
 
+        
         Node moveToNode = null;
 
         Node[] foundNodes = new Node[4];
@@ -169,6 +170,8 @@ public class Ghost : MonoBehaviour
             }
         }
 
+        //Debug.Log(targetTile + " " + Pacman.transform.position);
+
         if (foundNodes.Length == 1)
         {
             moveToNode = foundNodes[0];
@@ -181,8 +184,11 @@ public class Ghost : MonoBehaviour
 
             for(int i = 0; i < foundNodes.Length; i++)
             {
+                
                 if (foundNodesDirection[i] != Vector2.zero)
                 {
+                    Debug.Log("Ghost: " + currentNode + " " + "Is going to: " + moveToNode);
+                    Debug.Log("BEFORE: Potential next node" +  foundNodes[i] + " where pacman is " + targetTile);
                     float distance = MeasureDistance(foundNodes[i].transform.position, targetTile); // measures the distance between 
 
                     if(distance < leastDistance)
@@ -254,10 +260,14 @@ public class Ghost : MonoBehaviour
 
     float MeasureDistance(Vector2 posA, Vector2 posB)
     {
-        float dx = posA.x - posB.x;
-        float dy = posA.x - posB.y;
 
-        float distance = (float)Math.Sqrt(dx * dx + dy * dy); //pythagoras used to measure distance between ghost and Pacman
+        Debug.Log("posA.x: " + posA.x + " posA.y " + posA.y + " posB.x " + posB.x + " posB.y " + posB.y);
+        float dx = posA.x - posB.x;
+        float dy = posA.y - posB.y;
+
+        Debug.Log("dx: " + dx + " dy " + dy);
+        float distance = Mathf.Sqrt(dx * dx + dy * dy); //pythagoras used to measure distance between ghost and Pacman
+        Debug.Log("Distance: " + distance);
 
         return distance;
     }
