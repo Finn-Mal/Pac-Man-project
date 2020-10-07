@@ -10,7 +10,7 @@ public class Node : MonoBehaviour
     public Node[] Neighbours;
     public Vector2[] valid_Direction;
 
-    
+    public bool travelPoint = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,15 +30,14 @@ public class Node : MonoBehaviour
 
         }
 
-        
-        
+
+        if (travelPoint)
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     
 }

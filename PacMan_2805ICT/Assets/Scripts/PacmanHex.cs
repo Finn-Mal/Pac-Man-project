@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-public class PacMan : MonoBehaviour
+public class PacmanHex : MonoBehaviour
 {
-    //
-
+    private bool CanMove = false;
 
     public float move_speed = 4.0f;
 
@@ -14,9 +12,7 @@ public class PacMan : MonoBehaviour
 
     private Node currentNode, nextNode, previousNode; // node of Pacman's current position (which pellet Node is he on)
 
-    private Vector2 direction, nextDirection = Vector2.zero; // direction pacman is current going - new direction pacman will go at intersection 
-
-    private Animator anim;
+    private Vector2 direction, nextDirection;
 
 
     // Start is called before the first frame update
@@ -32,23 +28,21 @@ public class PacMan : MonoBehaviour
 
         currentNode = initialNode;
 
-        direction = Vector2.left;
+        direction = new Vector2(0.7f, -0.7f);
         changeTargetNode(direction);
-
-        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        //Debug.Log(Input.GetAxisRaw("Horizontal") + " " + Input.GetAxisRaw("Vertical"));
+
         readInput();
 
         movePacman();
 
         updateOrientation();
-
-        UpdateAnimation();
 
     }
 
@@ -57,26 +51,35 @@ public class PacMan : MonoBehaviour
     protected void readInput()
     {
         //function to read user input and change direction of the Pac-Man
-
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        Vector2 temp = Vector2.zero;
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) // Up direction
         {
-
             changeTargetNode(Vector2.up);
         }
-        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.D) && Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.RightArrow)) //diagonal Up Right direction
         {
-
-            changeTargetNode(Vector2.right);
+            temp = new Vector2(0.7f, 0.7f);
+            changeTargetNode(temp);
         }
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.LeftArrow)) //diagonal Up left direction
+        {
+            temp = new Vector2(-0.7f, 0.7f);
+            changeTargetNode(temp);
+        }
+        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) // down direction
         {
 
             changeTargetNode(Vector2.down);
         }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.D) && Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.LeftArrow)) //diagonal Down Right direction
         {
-
-            changeTargetNode(Vector2.left);
+            temp = new Vector2(0.7f, -0.7f);
+            changeTargetNode(temp);
+        }
+        else if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.LeftArrow)) //diagonal Down Left direction
+        {
+            temp = new Vector2(-0.7f, -0.7f);
+            changeTargetNode(temp);
         }
     }
 
@@ -89,16 +92,20 @@ public class PacMan : MonoBehaviour
         }
 
 
-
         if (currentNode != null)
         {
             Node moveToNode = ValidMove(newDirection);
             if (moveToNode != null)
             {
+                
+
                 direction = newDirection;
                 nextNode = moveToNode;
                 previousNode = currentNode;
                 currentNode = null;
+
+
+                
             }
         }
 
@@ -112,11 +119,12 @@ public class PacMan : MonoBehaviour
                 previousNode = swapNode;
             }
         }
+
+        Debug.Log("current Node: " + currentNode + " Next Node: " + nextNode + "previous node: " + previousNode);
     }
 
 
-
-    public void movePacman()
+    void movePacman()
     {
         if (nextNode != currentNode && nextNode != null)
         {
@@ -125,13 +133,6 @@ public class PacMan : MonoBehaviour
 
                 currentNode = nextNode;
                 transform.localPosition = currentNode.transform.position;
-
-                GameObject Teleport = reachPortal(currentNode.transform.position);
-                if (Teleport != null)
-                {
-                    transform.localPosition = Teleport.transform.position;
-                    currentNode = Teleport.GetComponent<Node>();
-                }
 
                 Node moveToNode = ValidMove(nextDirection);
                 if (moveToNode != null)
@@ -144,7 +145,7 @@ public class PacMan : MonoBehaviour
                     moveToNode = ValidMove(direction);
 
                 }
-                if (moveToNode != null) // need to check with this
+                if (moveToNode != null)
                 {
                     nextNode = moveToNode;
                     previousNode = currentNode;
@@ -153,7 +154,6 @@ public class PacMan : MonoBehaviour
                 else
                 {
                     direction = Vector2.zero;
-
                 }
             }
             else
@@ -165,7 +165,7 @@ public class PacMan : MonoBehaviour
     }
 
 
-    //update pacman's UI orientation in terms of direction he faces
+    //update pacman's UI orientation and animate him "moving" in a set vector direction per frame
     void updateOrientation()
     {
         if (direction == Vector2.up)
@@ -198,8 +198,11 @@ public class PacMan : MonoBehaviour
         Node NextNode = null;
         for (int i = 0; i < currentNode.Neighbours.Length; i++)
         {
-            if (currentNode.valid_Direction[i] == direction)
+
+            
+            if (Mathf.Round(Vector2.Dot(currentNode.valid_Direction[i], direction)) == 1)
             {
+                
                 NextNode = currentNode.Neighbours[i];
                 break;
             }
@@ -221,25 +224,20 @@ public class PacMan : MonoBehaviour
         }
     }
 
-
-
-    void UpdateAnimation()
+    Node GetThePositionAtNode(Vector2 position)
     {
-        if (direction == Vector2.zero)
+
+
+        // Creating a game object within Pac Man script to call reference to squareBoard GameObject within GameBoard (specifically the GameObject stored at position)
+        GameObject tile = GameObject.Find("GameBoard").GetComponent<The_Board>().Board[(int)position.x, (int)position.y];
+        if (tile != null)
         {
-            anim.speed = 0;
-        }
-        else
-        {
-            anim.speed = 1;
+            return tile.GetComponent<Node>(); //returns the tile Node that PacMan is currently located on
+
         }
 
+        return null;
     }
-
-
-    
-
-
 
     bool positionOvershot()
     {
@@ -256,21 +254,5 @@ public class PacMan : MonoBehaviour
         return vec.sqrMagnitude;
     }
 
-
-    GameObject reachPortal(Vector2 position)
-    {
-        GameObject tile = GameObject.Find("GameBoard").GetComponent<The_Board>().Board[(int)position.x, (int)position.y];
-        if (tile != null)
-        {
-            if(tile.GetComponent<Tiles>() && tile.GetComponent<Tiles>().Is_Portal)
-            {
-                GameObject newPortal = tile.GetComponent<Tiles>().PortalTo;
-                return newPortal;
-            }
-
-        }
-
-        return null;
-    }
 
 }
