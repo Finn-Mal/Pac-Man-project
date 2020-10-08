@@ -16,6 +16,8 @@ public class PacMan : MonoBehaviour
 
     private Vector2 direction, nextDirection = Vector2.zero; // direction pacman is current going - new direction pacman will go at intersection 
 
+    public Vector2 Orientation;
+
     private Animator anim;
 
 
@@ -34,6 +36,8 @@ public class PacMan : MonoBehaviour
 
         direction = Vector2.left;
         changeTargetNode(direction);
+
+        Orientation = direction;
 
         anim = GetComponent<Animator>();
     }
@@ -186,6 +190,8 @@ public class PacMan : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 180);
         }
+
+        Orientation = direction;
 
     }
 

@@ -9,6 +9,11 @@ public class Ghost : MonoBehaviour
     public float movespeed = 3.9f; //move speed of Ghost to pacman (always slightly slow in first couple levels
 
     public Node StartNode; //first node for Ghost to travel too
+    public Node ScatterNode;
+
+    public float GhostReleaseTimer = 0f;
+    public bool inGhostHouse = false;
+    public float ThisGhostTimer;
 
     public int scatterModePhase = 7;
     public int chaseModePhase = 20;
@@ -19,10 +24,12 @@ public class Ghost : MonoBehaviour
     public int stateIteration = 1;
     private float stateTimer = 0;
 
-    public enum Mode {Chase, Scatter, Frighten}
+    public enum Mode { Chase, Scatter, Frighten } // ghost states of choice
+    public enum GhostType { Red, Pink, Blue, Orange } //Blinky, Pinky, Inky, Clyde
 
     Mode currentMode = Mode.Scatter;
     Mode previousMode;
+    public GhostType theGhost;
 
     private GameObject Pacman;
 
@@ -30,6 +37,8 @@ public class Ghost : MonoBehaviour
     private Node currentNode, nextNode, previousNode;
     private Vector2 currectDirection, nextDirection;
 
+
+    public GameObject BlinkyTheGhost;
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +54,17 @@ public class Ghost : MonoBehaviour
         previousNode = currentNode;
         currentscatterModePhase = scatterModePhase;
 
-        Vector2 targetTile = Vector2.zero; //Vector that will define the tile X Y position Pacman is in
-        targetTile = new Vector2(Mathf.RoundToInt(Pacman.transform.position.x), Mathf.RoundToInt(Pacman.transform.position.y));
-        nextNode = GetNodePosition(targetTile);
+        if (inGhostHouse)
+        {
+            currectDirection = Vector2.up;
+            nextNode = currentNode.Neighbours[0];
+        }
+        else
+        {
+            currectDirection = Vector2.left;
+            nextNode = SelecteNextNode();
+        }
 
-        currectDirection = Vector2.left; //for testing ghost
     }
 
     // Update is called once per frame
@@ -59,11 +74,13 @@ public class Ghost : MonoBehaviour
 
         moveGhost();
 
+        ReleaseGhost();
+
     }
 
     void moveGhost()
     {
-        if (nextNode != currentNode && nextNode != null) // if next ndoe ghost trevels exists and isn't current target
+        if (nextNode != currentNode && nextNode != null && !inGhostHouse) // if next ndoe ghost trevels exists and isn't current target
         {
 
             if (positionOvershot()) //if they have overshot that position of the node
@@ -84,14 +101,13 @@ public class Ghost : MonoBehaviour
                 previousNode = currentNode;
                 currentNode = null;
 
-                Debug.Log(nextNode);
             }
             else
             {
                 transform.localPosition += (Vector3)currectDirection * movespeed * Time.deltaTime;
             }
         }
-        
+
     }
 
 
@@ -100,40 +116,40 @@ public class Ghost : MonoBehaviour
         if (currentMode != Mode.Frighten)
         {
             stateTimer += Time.deltaTime;
-            if(stateIteration < 4)
+            if (stateIteration < 4)
             {
-                if(currentMode == Mode.Scatter && stateTimer > currentscatterModePhase)
+                if (currentMode == Mode.Scatter && stateTimer > currentscatterModePhase)
                 {
                     changeMode(Mode.Chase);
                     stateTimer = 0f;
                 }
-                if(currentMode == Mode.Chase && stateTimer > chaseModePhase)
+                if (currentMode == Mode.Chase && stateTimer > chaseModePhase)
                 {
-                    
+
                     changeMode(Mode.Scatter);
                     stateTimer = 0f;
                 }
             }
             else
-            {   stateIteration++;
+            {
+                stateIteration++;
                 changeMode(Mode.Chase);
             }
-            
+
             if (stateIteration > 2)
             {
                 currentscatterModePhase = scatterModePhaseHard;
             }
 
-            //Debug.Log(currentMode);
         }
 
         else
         {
-
+            FrightenModeActivate();
         }
     }
 
-    void changeMode (Mode newMode)
+    void changeMode(Mode newMode)
     {
         currentMode = newMode;
     }
@@ -147,11 +163,132 @@ public class Ghost : MonoBehaviour
     }
 
 
+    Vector2 BlinkyTile()
+    {
+        Vector2 targetTile = Vector2.zero;
+
+        targetTile = new Vector2(Mathf.RoundToInt(Pacman.transform.position.x), Mathf.RoundToInt(Pacman.transform.position.y));
+       
+
+        return targetTile;
+    }
+
+    Vector2 PinkyTile()
+    {
+
+        Vector2 targetTile = Vector2.zero;
+
+        //must know pacman's orientation and position as Pinky always tries to be 4 tiles infront of pacman
+        Vector2 PacPosition = Pacman.transform.localPosition;
+        int PacX = Mathf.RoundToInt(PacPosition.x);
+        int PacY = Mathf.RoundToInt(PacPosition.y);
+
+        Vector2 PacmanOrientation = Pacman.GetComponent<PacMan>().Orientation; //gives the direction pacman is currently heading i.e Vector.up
+
+        Vector2 PacTile = new Vector2(PacX, PacY);
+        targetTile = PacTile + (4 * PacmanOrientation);//4 * Orientation will give exactly 4 units head of where Pacman will be
+        
+
+        return targetTile;
+
+    }
+
+    Vector2 InkyTile()
+    {
+        Vector2 targetTile = Vector2.zero;
+         //must know pacman's orientation and position as Pinky always tries to be 4 tiles infront of pacman
+        Vector2 PacPosition = Pacman.transform.localPosition;
+        int PacX = Mathf.RoundToInt(PacPosition.x);
+        int PacY = Mathf.RoundToInt(PacPosition.y);
+
+        Vector2 PacmanOrientation = Pacman.GetComponent<PacMan>().Orientation; //gives the direction pacman is currently heading i.e Vector.up
+
+        Vector2 PacTile = new Vector2(PacX, PacY);
+        Vector2 FirstTileCal = PacTile + (2 * PacmanOrientation);//4 * Orientation will give exactly 4 units head of where Pacman will be
+
+
+
+        int BlinkTargetx = (int)BlinkyTheGhost.transform.position.x;
+        int BlinkTargety = (int)BlinkyTheGhost.transform.position.y;
+
+        Vector2 TempBlink = new Vector2(BlinkTargetx, BlinkTargety);
+
+        float distance = MeasureDistance(FirstTileCal, TempBlink) * 2;
+
+        targetTile = new Vector2(TempBlink.x + distance, TempBlink.y + distance);
+
+        return targetTile;
+    }
+
+    Vector2 Clydetile()
+    {
+        Vector2 targetTile = Vector2.zero;
+        float distance = MeasureDistance(transform.localPosition, Pacman.transform.localPosition);
+        if (distance > 8) //distance is less then 8 tiles from pacman
+        {
+            //acts like he is in scatter mode
+            targetTile = new Vector2(Mathf.RoundToInt(Pacman.transform.position.x), Mathf.RoundToInt(Pacman.transform.position.y));
+            
+
+        }
+        else if (distance <= 8 ) //distance is greater then 8 tiles from pacman
+        {
+            targetTile = ScatterNode.transform.position;
+        }
+        
+
+        return targetTile;
+    }
+
+
+
+    Vector2 ChooseTile()
+    {
+        Vector2 targetTile = Vector2.zero; //Vector that will define the tile X Y position Pacman is in
+        if (theGhost == GhostType.Red)
+        {
+            targetTile = BlinkyTile();
+        }
+        else if (theGhost == GhostType.Pink)
+        {
+            targetTile = PinkyTile();
+        }
+        else if (theGhost == GhostType.Blue)
+        {
+            targetTile = InkyTile();
+        }
+        else if (theGhost == GhostType.Orange)
+        {
+            targetTile = Clydetile();
+        }
+
+
+        return targetTile;
+    }
+
+
+    void ReleaseGhost()
+    {
+        GhostReleaseTimer += Time.deltaTime;
+        if (GhostReleaseTimer >= ThisGhostTimer)
+        {
+            inGhostHouse = false;
+        }
+
+    }
+
     Node SelecteNextNode()
     {
         Vector2 targetTile = Vector2.zero; //Vector that will define the tile X Y position Pacman is in
-        targetTile = new Vector2(Mathf.RoundToInt(Pacman.transform.position.x),Mathf.RoundToInt(Pacman.transform.position.y));
-
+        //
+        if(currentMode == Mode.Chase)
+        {
+            targetTile = ChooseTile();
+        }
+        else if (currentMode == Mode.Scatter)
+        {
+            targetTile = ScatterNode.transform.position;
+        }
         
         Node moveToNode = null;
 
@@ -162,45 +299,35 @@ public class Ghost : MonoBehaviour
 
         for (int i = 0; i < currentNode.Neighbours.Length; i++)
         {
-            if(currentNode.valid_Direction[i] != currectDirection * -1) // avoid ghost going in reverse
+            if (currentNode.valid_Direction[i] != currectDirection * -1) // avoid ghost going in reverse
             {
                 foundNodes[nodeCounter] = currentNode.Neighbours[i];
                 foundNodesDirection[nodeCounter] = currentNode.valid_Direction[i];
-                nodeCounter++; 
+                nodeCounter++;
             }
         }
 
-        //Debug.Log(targetTile + " " + Pacman.transform.position);
 
-        if (foundNodes.Length == 1)
+        float leastDistance = 9999f;
+
+        for (int i = 0; i < foundNodes.Length; i++)
         {
-            moveToNode = foundNodes[0];
-            currectDirection = foundNodesDirection[0];
-        }
 
-        if(foundNodes.Length > 1)
-        {
-            float leastDistance = 9999f;
-
-            for(int i = 0; i < foundNodes.Length; i++)
+            if (foundNodesDirection[i] != Vector2.zero)
             {
-                
-                if (foundNodesDirection[i] != Vector2.zero)
-                {
-                    Debug.Log("Ghost: " + currentNode + " " + "Is going to: " + moveToNode);
-                    Debug.Log("BEFORE: Potential next node" +  foundNodes[i] + " where pacman is " + targetTile);
-                    float distance = MeasureDistance(foundNodes[i].transform.position, targetTile); // measures the distance between 
 
-                    if(distance < leastDistance)
-                    {
-                        leastDistance = distance;
-                        moveToNode = foundNodes[i];
-                        currectDirection = foundNodesDirection[i];
-                    }
+                float distance = MeasureDistance(foundNodes[i].transform.position, targetTile); // measures the distance between 
+
+                if (distance < leastDistance)
+                {
+                    leastDistance = distance;
+                    moveToNode = foundNodes[i];
+                    currectDirection = foundNodesDirection[i];
                 }
             }
         }
-        
+
+
         return moveToNode;
     }
 
@@ -217,7 +344,7 @@ public class Ghost : MonoBehaviour
 
         if (tile != null)
         {
-            if(tile.GetComponent<Node>() != null)
+            if (tile.GetComponent<Node>() != null)
             {
                 return tile.GetComponent<Node>();
             }
@@ -241,7 +368,7 @@ public class Ghost : MonoBehaviour
         return null;
     }
 
-    
+
 
 
     float lengthFromNode(Vector2 targetPosition)
@@ -258,17 +385,15 @@ public class Ghost : MonoBehaviour
         return nodetoSelf > nodetoTarget; // return if pacman has travel further distance then targetnode - previousnode
     }
 
-    float MeasureDistance(Vector2 posA, Vector2 posB)
+    float MeasureDistance(Vector2 posA, Vector2 posB) // Euclindean distance
     {
 
-        Debug.Log("posA.x: " + posA.x + " posA.y " + posA.y + " posB.x " + posB.x + " posB.y " + posB.y);
         float dx = posA.x - posB.x;
         float dy = posA.y - posB.y;
 
-        Debug.Log("dx: " + dx + " dy " + dy);
         float distance = Mathf.Sqrt(dx * dx + dy * dy); //pythagoras used to measure distance between ghost and Pacman
-        Debug.Log("Distance: " + distance);
 
         return distance;
     }
+
 }

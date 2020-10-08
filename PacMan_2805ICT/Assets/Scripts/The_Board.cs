@@ -13,7 +13,7 @@ public class The_Board : MonoBehaviour
     public GameObject[,] Board = new GameObject[boardWidth, boardHeight];
     private GameObject[] All_Pellets;
     private GameObject[] All_Portals;
-
+    private GameObject[] All_Tiles;
 
     private int GameScore = 0;
     private int pelletsRemain = 0;
@@ -25,23 +25,18 @@ public class The_Board : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        All_Pellets = GameObject.FindGameObjectsWithTag("Tile");
+        
+        All_Tiles= GameObject.FindGameObjectsWithTag("Tile");
 
-        foreach (GameObject Single_Pellet in All_Pellets)
+        foreach (GameObject Single_Tiles in All_Tiles)
         {
-            pelletsRemain += 1;
-            Vector2 position = Single_Pellet.transform.position;
-            Board[(int)position.x, (int)position.y] = Single_Pellet;
+            
+            Vector2 position = Single_Tiles.transform.position;
+            Board[(int)position.x, (int)position.y] = Single_Tiles;
 
         }
-        All_Portals= GameObject.FindGameObjectsWithTag("Portal");
 
-        foreach (GameObject Single_Portal in All_Portals)
-        {
-            Vector2 position = Single_Portal.transform.position;
-            Board[(int)position.x, (int)position.y] = Single_Portal;
-
-        }
+        
         ThePacman = GameObject.FindWithTag("Player");
     }
 
@@ -71,7 +66,7 @@ public class The_Board : MonoBehaviour
                     tile.GetComponent<SpriteRenderer>().enabled = false;
                     Tilecomponent.setEaten(true);
                     GameScore += 10;
-                    pelletsRemain -= 1;
+                    pelletsRemain += 1;
                 }
 
                 
@@ -101,7 +96,10 @@ public class The_Board : MonoBehaviour
 
     void GameStatus()
     {
+        if(pelletsRemain == 225)
+        {
 
+        }
     }
 
     void loadNextLevel()
