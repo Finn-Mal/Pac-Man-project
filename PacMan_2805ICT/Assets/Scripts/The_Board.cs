@@ -11,8 +11,7 @@ public class The_Board : MonoBehaviour
 
     // an array to store the X, Y cooridinates of a game object currently in the scene (maze Pixels, Pellets, PacMan etc
     public GameObject[,] Board = new GameObject[boardWidth, boardHeight];
-    private GameObject[] All_Pellets;
-    private GameObject[] All_Portals;
+    private GameObject[] Ghosts;
     private GameObject[] All_Tiles;
 
     private int GameScore = 0;
@@ -21,12 +20,14 @@ public class The_Board : MonoBehaviour
 
     private GameObject ThePacman;
 
+    public Ghost localGhost;
 
     // Start is called before the first frame update
     void Start()
     {
         
         All_Tiles= GameObject.FindGameObjectsWithTag("Tile");
+        Ghosts = GameObject.FindGameObjectsWithTag("Ghost");
 
         foreach (GameObject Single_Tiles in All_Tiles)
         {
@@ -36,7 +37,6 @@ public class The_Board : MonoBehaviour
 
         }
 
-        
         ThePacman = GameObject.FindWithTag("Player");
     }
 
@@ -63,10 +63,20 @@ public class The_Board : MonoBehaviour
 
                 if (Tilecomponent.Is_Pellet || Tilecomponent.Is_Energizer)
                 {
+                    
+                    if(Tilecomponent.Is_Energizer && !Tilecomponent.checkEaten())
+                    {
+                        foreach(GameObject ScaredGhost in Ghosts)
+                        {
+                            ScaredGhost.GetComponent<Ghost>().FrightenModeActivate();
+                        }
+                        
+                    }
                     tile.GetComponent<SpriteRenderer>().enabled = false;
                     Tilecomponent.setEaten(true);
                     GameScore += 10;
                     pelletsRemain += 1;
+
                 }
 
                 
