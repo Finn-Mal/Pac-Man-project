@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FrightenMode
+  m_Name: ClydeDown
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 144dddf63daff0b429d3bce0efe7376b, type: 3}
+      value: {fileID: 21300000, guid: 5fb1e77fd2a30a843801e57a09009a3b, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: 8944e4e9700d96448bbeda96d5fa7adc, type: 3}
+      value: {fileID: 21300000, guid: f1649c031eff9e64ba503d076a36d3c5, type: 3}
     - time: 0.4
-      value: {fileID: 21300000, guid: 144dddf63daff0b429d3bce0efe7376b, type: 3}
+      value: {fileID: 21300000, guid: 5fb1e77fd2a30a843801e57a09009a3b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 144dddf63daff0b429d3bce0efe7376b, type: 3}
-    - {fileID: 21300000, guid: 8944e4e9700d96448bbeda96d5fa7adc, type: 3}
-    - {fileID: 21300000, guid: 144dddf63daff0b429d3bce0efe7376b, type: 3}
+    - {fileID: 21300000, guid: 5fb1e77fd2a30a843801e57a09009a3b, type: 3}
+    - {fileID: 21300000, guid: f1649c031eff9e64ba503d076a36d3c5, type: 3}
+    - {fileID: 21300000, guid: 5fb1e77fd2a30a843801e57a09009a3b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
