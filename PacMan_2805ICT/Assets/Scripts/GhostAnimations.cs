@@ -6,11 +6,11 @@ public class GhostAnimations : MonoBehaviour
 {
     private Ghost GhostInformation;
     private Vector2 direction;
-    private enum Mode { Chase, Scatter, Frighten }
-    private Mode currentMode;
+    private Ghost.Mode ghostMode;
 
 
     private float frightenModeTimer = 0;
+    //private float endingFrightenMode = 0;
 
 
     public RuntimeAnimatorController Up;
@@ -24,48 +24,55 @@ public class GhostAnimations : MonoBehaviour
     void Start()
     {
         GhostInformation = transform.GetComponent<Ghost>();
+        direction = GhostInformation.getDirection();
+        ghostMode = GhostInformation.getMode();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        frightenModeTimer = GhostInformation.getFrightenTimer();
+        direction = GhostInformation.getDirection();
+        ghostMode = GhostInformation.getMode();
+        UpdateAnimation();
     }
-    /*
+    
     public void UpdateAnimation()
     {
-        if (currentMode != Mode.Frighten)
+        if (ghostMode != Ghost.Mode.Frighten)
         {
-            if (Direction == Vector2.left)
+
+            
+            if (direction == Vector2.left)
             {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostLeft;
+                transform.GetComponent<Animator>().runtimeAnimatorController = Left;
             }
-            if (Direction == Vector2.right)
+            if (direction == Vector2.right)
             {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostRight;
+                transform.GetComponent<Animator>().runtimeAnimatorController = Right;
             }
-            if (Direction == Vector2.up)
+            if (direction == Vector2.up)
             {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostUp;
+                transform.GetComponent<Animator>().runtimeAnimatorController = Up;
             }
-            if (Direction == Vector2.down)
+            if (direction == Vector2.down)
             {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostDown;
+                transform.GetComponent<Animator>().runtimeAnimatorController = Down;
             }
         }
-        else if (currentMode == Mode.Frighten)
+        else if (ghostMode == Ghost.Mode.Frighten)
         {
-            if (frightenModeTimer < endingFrightenMode)
+            if (frightenModeTimer < GhostInformation.endingFrightenMode)
             {
                 transform.GetComponent<Animator>().runtimeAnimatorController = frightenGhost;
             }
-            else if (frightenModeTimer >= endingFrightenMode)
+            else if (frightenModeTimer >= GhostInformation.endingFrightenMode)
             {
                 transform.GetComponent<Animator>().runtimeAnimatorController = endingFrighten;
             }
 
         }
-    }*/
+    }
 
 
 }

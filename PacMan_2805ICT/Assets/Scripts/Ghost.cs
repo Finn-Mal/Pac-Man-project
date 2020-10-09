@@ -51,12 +51,12 @@ public class Ghost : MonoBehaviour
 
     public GameObject BlinkyTheGhost;
 
-    public RuntimeAnimatorController ghostUp;
+    /*public RuntimeAnimatorController ghostUp;
     public RuntimeAnimatorController ghostRight;
     public RuntimeAnimatorController ghostLeft;
     public RuntimeAnimatorController ghostDown;
     public RuntimeAnimatorController frightenGhost;
-    public RuntimeAnimatorController endingFrighten;
+    public RuntimeAnimatorController endingFrighten;*/
 
 
 
@@ -100,11 +100,11 @@ public class Ghost : MonoBehaviour
 
         ReleaseGhost();
 
-        UpdateAnimation();
+       // UpdateAnimation();
 
     }
 
-    void UpdateAnimation()
+    /*void UpdateAnimation()
     {
         if (currentMode != Mode.Frighten)
         {
@@ -137,7 +137,7 @@ public class Ghost : MonoBehaviour
             }
 
         }
-    }
+    }*/
 
     void moveGhost()
     {
@@ -247,21 +247,7 @@ public class Ghost : MonoBehaviour
         currentMode = Mode.Frighten;
     }
 
-    /* Node FrightenModeLogic()
-     {
-         Node moveToNode = null;
-         if (transform.transform.position == nextNode.transform.position)
-         {
-             int i = nextNode.GetComponent<Node>().Neighbours.Length;
-             int rngindex = (int)Random.Range(0f, i - 1);
-             currectDirection = nextNode.GetComponent<Node>().valid_Direction[rngindex];
-             moveToNode = nextNode.GetComponent<Node>().Neighbours[rngindex];
-
-         }
-
-         return moveToNode;
-     }*/
-
+    
 
 
 
@@ -522,5 +508,7 @@ public class Ghost : MonoBehaviour
     {
         return frightenModeTimer;
     }
+
+
 
 }
