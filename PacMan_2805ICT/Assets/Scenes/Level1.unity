@@ -329,8 +329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &8152961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,8 +2089,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &38253977
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2126,8 +2128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &42245024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2330,8 +2333,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &47051093
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2450,8 +2454,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &51689824
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2488,8 +2493,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &52218924
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2526,8 +2532,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &55196537
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2667,8 +2674,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &66128341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,8 +2880,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &70709285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2979,8 +2988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &70846592
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3102,8 +3112,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &74067872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3225,8 +3236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &80918505
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3470,8 +3482,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &84733563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,8 +3688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &89404804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,8 +4621,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &109978477
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5046,8 +5061,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &123195773 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -5091,8 +5107,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &123482218
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,8 +5212,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &123813720
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5485,8 +5503,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &133835320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5687,8 +5706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &136778132
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5725,8 +5745,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &137693916
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6031,8 +6052,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &149209108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6135,8 +6157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &152115174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6192,8 +6215,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &154310018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,8 +6897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &171890481
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7594,10 +7619,12 @@ MonoBehaviour:
   - {fileID: 884293833}
   - {fileID: 1834391685}
   - {fileID: 1325143861}
+  - {fileID: 1357680526}
   valid_Direction:
   - {x: 0, y: 1}
   - {x: 1, y: 0}
   - {x: -1, y: 0}
+  - {x: 0, y: -1}
   travelPoint: 1
 --- !u!114 &203035019
 MonoBehaviour:
@@ -7613,8 +7640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 1
+  PortalTo: {fileID: 0}
 --- !u!1 &209920986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -7635,8 +7663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &209920989
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7776,8 +7805,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &212432709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -7798,8 +7828,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &212432712
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7918,8 +7949,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &214274011
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8232,8 +8264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &226913838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8270,8 +8303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &227627212
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8670,7 +8704,7 @@ PrefabInstance:
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
@@ -9051,8 +9085,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &235413804
 GameObject:
   m_ObjectHideFlags: 0
@@ -9155,8 +9190,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &243368090
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9275,8 +9311,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 1
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!114 &246950449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9316,8 +9353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &249953179
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9354,8 +9392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &252332926
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9392,8 +9431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &252439762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9975,8 +10015,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &264467533
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10426,8 +10467,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &269302077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10628,8 +10670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &278828321
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10833,8 +10876,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &287286855
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11117,8 +11161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &290600613
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11260,8 +11305,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &301121525
 GameObject:
   m_ObjectHideFlags: 0
@@ -11364,8 +11410,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &301527852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11752,8 +11799,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &307980294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12364,8 +12412,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!114 &325581295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12494,8 +12543,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &331616361
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12617,8 +12667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &336034004
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12904,8 +12955,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &345181963
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13487,8 +13539,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &359384544
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13967,8 +14020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &369818128
 GameObject:
   m_ObjectHideFlags: 0
@@ -14563,8 +14617,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &391320164
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14622,8 +14677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &395175216
 GameObject:
   m_ObjectHideFlags: 0
@@ -14975,8 +15031,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &406303744
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15268,8 +15325,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &413729569
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15391,8 +15449,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &417670373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15697,8 +15756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 1
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &425985662
 GameObject:
   m_ObjectHideFlags: 0
@@ -15801,8 +15861,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &426798421
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15921,8 +15982,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &428611173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16579,8 +16641,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &455380794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -16601,8 +16664,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &455380797
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16970,8 +17034,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &466240200
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17336,8 +17401,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &474631933
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17456,8 +17522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &475733632
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17494,8 +17561,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &476964446
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18575,8 +18643,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &511088835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19446,8 +19515,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &524662506
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19648,8 +19718,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &535671239
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19686,8 +19757,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &536510242
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19810,8 +19882,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &552914766
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20428,8 +20501,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &567218711
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20715,8 +20789,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &570475265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20838,8 +20913,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &570643983
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21545,6 +21621,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 7fb19238be909594cb13b6dd82cf5888, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
+  EyesLeft: {fileID: 0}
+  EyesRight: {fileID: 0}
+  EyesUp: {fileID: 0}
+  EyesDown: {fileID: 0}
 --- !u!95 &589666964
 Animator:
   serializedVersion: 3
@@ -21635,7 +21715,7 @@ PrefabInstance:
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
@@ -21747,8 +21827,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &590775590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21785,8 +21866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &594586760
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22009,8 +22091,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &601411621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22368,8 +22451,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &611491472
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22655,8 +22739,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &621022002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23109,8 +23194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &627847966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23573,6 +23659,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 2853c687811c1bb4689cbfbb90906026, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
+  EyesLeft: {fileID: 0}
+  EyesRight: {fileID: 0}
+  EyesUp: {fileID: 0}
+  EyesDown: {fileID: 0}
 --- !u!95 &637638690
 Animator:
   serializedVersion: 3
@@ -23633,10 +23723,11 @@ MonoBehaviour:
   movespeed: 3.9
   StartNode: {fileID: 203035017}
   ScatterNode: {fileID: 590713119}
+  Respawn: {fileID: 1357680526}
   GhostReleaseTimer: 0
-  inGhostHouse: 0
   ThisGhostTimer: 0
-  ghostIsEaten: 0
+  inGhostHouse: 0
+  isEaten: 0
   scatterModePhase: 7
   chaseModePhase: 20
   frightenModeDuration: 10
@@ -23832,8 +23923,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &648346738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23870,8 +23962,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &654845709
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24009,8 +24102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &658002187
 GameObject:
   m_ObjectHideFlags: 0
@@ -24113,8 +24207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &659119700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25153,8 +25248,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &684862574
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25358,8 +25454,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &685899813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25563,8 +25660,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &692063905
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25771,8 +25869,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &696899596
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26635,8 +26734,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &726989941
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26755,8 +26855,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &731436159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28007,8 +28108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &758449547
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28064,8 +28166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &760187582
 GameObject:
   m_ObjectHideFlags: 0
@@ -28250,8 +28353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &765729077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28288,8 +28392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &768350816
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29401,8 +29506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &800525469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29439,8 +29545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &801040551
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29934,8 +30041,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &814469120
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30239,8 +30347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &824345031
 GameObject:
   m_ObjectHideFlags: 0
@@ -30943,8 +31052,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &847275080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -30965,8 +31075,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &847275083
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31170,8 +31281,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &854027722
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32477,8 +32589,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &886795291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32748,8 +32861,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &893539173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32786,8 +32900,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &896684091
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32845,8 +32960,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &900027177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33222,8 +33338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &914466589
 GameObject:
   m_ObjectHideFlags: 0
@@ -33824,8 +33941,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &927559654
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34135,8 +34253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &937977586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34512,8 +34631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &949249320
 GameObject:
   m_ObjectHideFlags: 0
@@ -34799,8 +34919,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &954973099
 GameObject:
   m_ObjectHideFlags: 0
@@ -34903,8 +35024,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &955709380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35329,8 +35451,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &967425030
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35367,8 +35490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &968275290
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35947,8 +36071,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &982361789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36067,8 +36192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &987329181
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36438,8 +36564,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &994788162
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37144,8 +37271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1025776853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37201,8 +37329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1034232662
 GameObject:
   m_ObjectHideFlags: 0
@@ -37574,6 +37703,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 1f45654131552d24f8d198af093e7668, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
+  EyesLeft: {fileID: 0}
+  EyesRight: {fileID: 0}
+  EyesUp: {fileID: 0}
+  EyesDown: {fileID: 0}
 --- !u!95 &1041049306
 Animator:
   serializedVersion: 3
@@ -37828,8 +37961,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1051562324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -37850,8 +37984,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1051562327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38216,8 +38351,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1060967893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38858,8 +38994,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1081216487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39132,8 +39269,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1084225183
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39252,8 +39390,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1086480742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39494,8 +39633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1090660734
 GameObject:
   m_ObjectHideFlags: 0
@@ -40014,8 +40154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1103160933
 GameObject:
   m_ObjectHideFlags: 0
@@ -40697,8 +40838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1115259034
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41917,8 +42059,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1144453821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42109,8 +42252,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1154666746
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42478,8 +42622,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1168316461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42598,8 +42743,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1173429111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43140,8 +43286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 1
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1187002177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43178,8 +43325,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1187346216
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43196,35 +43344,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!1 &1188498665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1668305945}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1188498666 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1668305945}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1188498667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188498665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0731ad7d8368e72488406092281726dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Neighbours:
-  - {fileID: 1325143861}
-  valid_Direction:
-  - {x: 0, y: 1}
-  travelPoint: 1
 --- !u!1 &1190171021
 GameObject:
   m_ObjectHideFlags: 0
@@ -43644,8 +43763,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1199346657
 GameObject:
   m_ObjectHideFlags: 0
@@ -44249,8 +44369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1209726265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44308,8 +44429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1215757809
 GameObject:
   m_ObjectHideFlags: 0
@@ -44497,8 +44619,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1217237813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44617,8 +44740,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1220177377
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44904,8 +45028,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1228496761
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44942,8 +45067,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1229276217
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45308,8 +45434,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1240206291
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45844,8 +45971,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1249572975
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46049,8 +46177,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1254657873
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46500,8 +46629,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1265272844
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46637,8 +46767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 1904952741}
   Is_Portal: 1
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 1904952741}
 --- !u!1001 &1269419470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46990,8 +47121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1284127708
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47028,8 +47160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1285965557
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47649,8 +47782,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1310688547
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47857,8 +47991,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1319537369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48261,8 +48396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1330978474
 GameObject:
   m_ObjectHideFlags: 0
@@ -49387,8 +49523,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1359803775
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49526,8 +49663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1365667041
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49564,8 +49702,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1372825944
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49703,8 +49842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1373718910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49810,8 +49950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1378820908
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50012,8 +50153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1383601393
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50706,8 +50848,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1419783544
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50744,8 +50887,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1421533259
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50782,8 +50926,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1422327826
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50820,8 +50965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1423281248
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51205,8 +51351,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1433910046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51750,8 +51897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1440942009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51964,7 +52112,7 @@ PrefabInstance:
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
@@ -52040,8 +52188,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!114 &1448370466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52185,8 +52334,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1452969611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -52226,8 +52376,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1453802819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52497,8 +52648,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1456505506
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52702,8 +52854,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1460007079
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52907,8 +53060,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1463320511
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52945,8 +53099,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1464037191
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53730,8 +53885,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1486667424
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53850,8 +54006,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1490688799
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54240,8 +54397,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1499366510
 GameObject:
   m_ObjectHideFlags: 0
@@ -54647,8 +54805,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1518235638
 GameObject:
   m_ObjectHideFlags: 0
@@ -54833,8 +54992,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1521765728
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55035,8 +55195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1525788054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55836,8 +55997,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1551309290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55943,8 +56105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1556123779
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56063,8 +56226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1562742391
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56101,8 +56265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1564373733
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56391,8 +56556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1574319947
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56514,8 +56680,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1577779681
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56634,8 +56801,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1579798209
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56672,8 +56840,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1579891061
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56956,8 +57125,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1583605531
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57015,8 +57185,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1585861481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -57037,8 +57208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1585861484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57488,8 +57660,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1603346692
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57775,8 +57948,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 1
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1612145085
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58229,8 +58403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1616950455
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59260,8 +59435,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1655491890
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59751,101 +59927,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1668202372}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1668305945
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1821644799}
-    m_Modifications:
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.91028494
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5424528
-      objectReference: {fileID: 0}
-    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_Name
-      value: Respawn
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Tile
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb, type: 3}
 --- !u!1001 &1669170781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59951,8 +60032,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1670289892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60071,8 +60153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1676473491
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60276,8 +60359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1680264436
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60856,8 +60940,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1710586981
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60894,8 +60979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1711170265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60932,8 +61018,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1712876247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61301,8 +61388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1725529474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61421,8 +61509,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1728992052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61978,8 +62067,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1746653937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -62000,8 +62090,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1746653940
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62038,8 +62129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1747207201
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62428,8 +62520,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1755841927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62869,8 +62962,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1770925685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62907,8 +63001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1771235351
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63027,8 +63122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1775865492
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63065,8 +63161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1779600764
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63519,8 +63616,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1781468970
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -63658,8 +63756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &1793100486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64257,8 +64356,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1802626814
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -65059,7 +65159,6 @@ Transform:
   - {fileID: 1937332607}
   - {fileID: 1357680525}
   - {fileID: 756682302}
-  - {fileID: 1188498666}
   - {fileID: 590713117}
   - {fileID: 231551990}
   - {fileID: 1448370463}
@@ -65356,10 +65455,12 @@ MonoBehaviour:
   - {fileID: 655101310}
   - {fileID: 1100276720}
   - {fileID: 203035017}
+  - {fileID: 756682303}
   valid_Direction:
   - {x: 0, y: 1}
   - {x: 1, y: 0}
   - {x: -1, y: 0}
+  - {x: 0, y: -1}
   travelPoint: 1
 --- !u!114 &1834391687
 MonoBehaviour:
@@ -65375,8 +65476,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 1
+  PortalTo: {fileID: 0}
 --- !u!1 &1836961950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -65416,8 +65518,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1837975955
 GameObject:
   m_ObjectHideFlags: 0
@@ -65541,8 +65644,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1841534101
 GameObject:
   m_ObjectHideFlags: 0
@@ -66069,8 +66173,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1852342546
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66359,8 +66464,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1856194843
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66561,8 +66667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1863619062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66937,6 +67044,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 37ee235cc735110438cac1c68046d8f0, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
+  EyesLeft: {fileID: 0}
+  EyesRight: {fileID: 0}
+  EyesUp: {fileID: 0}
+  EyesDown: {fileID: 0}
 --- !u!95 &1880415319
 Animator:
   serializedVersion: 3
@@ -67002,8 +67113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1883006113
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -67059,8 +67171,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1888088841
 GameObject:
   m_ObjectHideFlags: 0
@@ -67740,8 +67853,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1897459687
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -67962,8 +68076,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 1268618512}
   Is_Portal: 1
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 1268618512}
 --- !u!1 &1910601864 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -67984,8 +68099,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1910601867
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68520,8 +68636,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1923061017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68558,8 +68675,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1923373731
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -68781,8 +68899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1931379227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -68803,8 +68922,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1931379230
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69045,8 +69165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1940134192
 GameObject:
   m_ObjectHideFlags: 0
@@ -69753,8 +69874,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1953077785
 GameObject:
   m_ObjectHideFlags: 0
@@ -70103,8 +70225,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1960363859
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -70166,7 +70289,7 @@ PrefabInstance:
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
         type: 3}
@@ -70242,8 +70365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!114 &1961866254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70306,8 +70430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &1965849808
 GameObject:
   m_ObjectHideFlags: 0
@@ -70741,8 +70866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1974480179
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -70943,8 +71069,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1981901296
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -70981,8 +71108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1988108843
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -71019,8 +71147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1990824992
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -71385,8 +71514,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &1993878760
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -71672,8 +71802,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2005049346
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -71999,8 +72130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 0
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &2010207030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -72021,8 +72153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2010207033
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -72685,8 +72818,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2024137852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -72808,8 +72942,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2034274195
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73347,8 +73482,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2063221844
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73385,8 +73521,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2064100576
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73526,8 +73663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &2068852757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -73548,8 +73686,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2068852760
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73668,8 +73807,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2070356323
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -74635,8 +74775,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1001 &2084719054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74824,8 +74965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2085672800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75108,8 +75250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2087615267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75146,8 +75289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2090388685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75515,8 +75659,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2097524514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75553,8 +75698,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2108689686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -75947,8 +76093,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!1 &2116822306
 GameObject:
   m_ObjectHideFlags: 0
@@ -76218,8 +76365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2119913815
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -76338,8 +76486,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2124895185
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -76839,8 +76988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2132676583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -76959,8 +77109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2136626755
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -77164,8 +77315,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Is_Energizer: 0
   Is_Pellet: 1
-  PortalTo: {fileID: 0}
   Is_Portal: 0
+  GhostHouseDoor: 0
+  PortalTo: {fileID: 0}
 --- !u!58 &2143974414
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -77244,6 +77396,11 @@ PrefabInstance:
       propertyPath: frightenGhost
       value: 
       objectReference: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
+    - target: {fileID: 1816539001638140524, guid: c711ca5b1920bea4090fd6d597be7611,
+        type: 3}
+      propertyPath: Respawn
+      value: 
+      objectReference: {fileID: 1357680526}
     - target: {fileID: 5391150570877777506, guid: c711ca5b1920bea4090fd6d597be7611,
         type: 3}
       propertyPath: m_Name
@@ -77383,6 +77540,11 @@ PrefabInstance:
       propertyPath: endingFrighten
       value: 
       objectReference: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
+    - target: {fileID: 453797053764277935, guid: 0ecee3093437887468fe5e40708533d3,
+        type: 3}
+      propertyPath: Respawn
+      value: 
+      objectReference: {fileID: 756682303}
     - target: {fileID: 3906414476340988584, guid: 0ecee3093437887468fe5e40708533d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77577,6 +77739,11 @@ PrefabInstance:
       propertyPath: ghostDown
       value: 
       objectReference: {fileID: 9100000, guid: 37ee235cc735110438cac1c68046d8f0, type: 2}
+    - target: {fileID: 3031394939649495864, guid: 71f69314485d31547ba76bc27b83645d,
+        type: 3}
+      propertyPath: Respawn
+      value: 
+      objectReference: {fileID: 756682303}
     - target: {fileID: 6686815939173790706, guid: 71f69314485d31547ba76bc27b83645d,
         type: 3}
       propertyPath: m_Name

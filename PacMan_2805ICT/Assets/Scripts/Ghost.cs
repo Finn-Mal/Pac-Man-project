@@ -6,18 +6,22 @@ public class Ghost : MonoBehaviour
 {
 
     public float movespeed = 3.9f; //move speed of Ghost to pacman (always slightly slow in first couple levels
-    private float FrightenSpeed = 3.0f;
+    private float FrightenSpeed = 2.5f;
+    public float EatenSpeed = 7.5f;
 
     private float ghostSpeed;
 
+    // potential nodes that the ghosts may target
     public Node StartNode; //first node for Ghost to travel too
     public Node ScatterNode;
+    public Node Respawn;
+
 
     public float GhostReleaseTimer = 0f;
-    public bool inGhostHouse = false;
     public float ThisGhostTimer;
 
-    public bool ghostIsEaten = false;
+    public bool inGhostHouse = false;
+    public bool isEaten = false;
 
     public int scatterModePhase = 7;
     public int chaseModePhase = 20;
@@ -35,7 +39,7 @@ public class Ghost : MonoBehaviour
     private float stateTimer = 0;
     private float frightenModeTimer = 0;
 
-    public enum Mode { Chase, Scatter, Frighten } // ghost states of choice
+    public enum Mode { Chase, Scatter, Frighten, Eaten } // ghost states of choice
     public enum GhostType { Red, Pink, Blue, Orange } //Blinky, Pinky, Inky, Clyde
 
     Mode currentMode = Mode.Scatter;
@@ -51,17 +55,10 @@ public class Ghost : MonoBehaviour
 
     public GameObject BlinkyTheGhost;
 
-    /*public RuntimeAnimatorController ghostUp;
-    public RuntimeAnimatorController ghostRight;
-    public RuntimeAnimatorController ghostLeft;
-    public RuntimeAnimatorController ghostDown;
-    public RuntimeAnimatorController frightenGhost;
-    public RuntimeAnimatorController endingFrighten;*/
 
+    private Vector2 theTarget;
 
-
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -100,44 +97,12 @@ public class Ghost : MonoBehaviour
 
         ReleaseGhost();
 
-       // UpdateAnimation();
+        ExitGhostHouse();
+
 
     }
 
-    /*void UpdateAnimation()
-    {
-        if (currentMode != Mode.Frighten)
-        {
-            if (currectDirection == Vector2.left)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostLeft;
-            }
-            if (currectDirection == Vector2.right)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostRight;
-            }
-            if (currectDirection == Vector2.up)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostUp;
-            }
-            if (currectDirection == Vector2.down)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = ghostDown;
-            }
-        }
-        else if (currentMode == Mode.Frighten)
-        {
-            if (frightenModeTimer < endingFrightenMode)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = frightenGhost;
-            }
-            else if (frightenModeTimer >= endingFrightenMode)
-            {
-                transform.GetComponent<Animator>().runtimeAnimatorController = endingFrighten;
-            }
-
-        }
-    }*/
+    
 
     void moveGhost()
     {
@@ -150,17 +115,23 @@ public class Ghost : MonoBehaviour
                 currentNode = nextNode;
                 transform.localPosition = currentNode.transform.position;
 
-                GameObject Portaldestination = GetPortal(currentNode.transform.position);
-                if (Portaldestination != null)
-                {
-                    transform.localPosition = Portaldestination.transform.position;
 
-                    currentNode = Portaldestination.GetComponent<Node>();
+                GameObject tile = GetTile(currentNode.transform.position);
+                if (tile != null && tile.GetComponent<Tiles>().Is_Portal)
+                {
+                    
+                    transform.localPosition = tile.GetComponent<Tiles>().PortalTo.transform.position;
+
+                    currentNode = tile.GetComponent<Tiles>().PortalTo.GetComponent<Node>();
                 }
 
+                //check here if the current node equals enterGhostHouse && if ghost has been eatn
 
+                // if yes, perform return to house functions until ghost has respawned
+
+                //if not do as normal
+                
                 nextNode = SelecteNextNode();
-
                 previousNode = currentNode;
                 currentNode = null;
 
@@ -173,11 +144,35 @@ public class Ghost : MonoBehaviour
 
     }
 
+    void ExitGhostHouse() {
+    
+        if (currentMode == Mode.Eaten)
+        {
+            if(transform.position == Respawn.transform.position)
+            {
+                currentNode = Respawn;
+                previousNode = currentNode;
+                currentMode = Mode.Chase;
+                nextNode = Respawn.Neighbours[0];
+                currectDirection = Vector2.up;
+            }
+        }
+        
+        ghostSpeed = movespeed;
+    }
+
+    Vector2 RandomTile() {
+
+        Vector2 targetTile = new Vector2(Random.Range(0, 28), Random.Range(0, 36));
+
+        return targetTile;
+    }
 
     void modeUpdate()
     {
-        if (currentMode != Mode.Frighten)
+        if (currentMode != Mode.Frighten && currentMode != Mode.Eaten)
         {
+            ghostSpeed = movespeed;
             stateTimer += Time.deltaTime;
             if (stateIteration < 4)
             {
@@ -206,7 +201,7 @@ public class Ghost : MonoBehaviour
 
         }
 
-        else
+        else if (currentMode != Mode.Eaten)
         {
             ghostSpeed = FrightenSpeed;
             frightenModeTimer += Time.deltaTime;
@@ -229,11 +224,8 @@ public class Ghost : MonoBehaviour
     public void FrightenModeActivate()
     {
         frightenModeTimer = 0;
-
-
-        if (currentMode != Mode.Frighten)
+        if (currentMode != Mode.Frighten && currentMode != Mode.Eaten)
         {
-
             if (!inGhostHouse)
             {
                 Node temp = previousNode;
@@ -242,9 +234,9 @@ public class Ghost : MonoBehaviour
                 currectDirection *= -1;
                 previousMode = currentMode;
             }
-
+            currentMode = Mode.Frighten;
         }
-        currentMode = Mode.Frighten;
+        
     }
 
     
@@ -372,7 +364,8 @@ public class Ghost : MonoBehaviour
         Node moveToNode = null;
 
         Vector2 targetTile = Vector2.zero; //Vector that will define the tile X Y position Pacman is in
-                                           //
+        
+        
         if (currentMode == Mode.Chase)
         {
             targetTile = ChooseTile();
@@ -381,6 +374,16 @@ public class Ghost : MonoBehaviour
         {
             targetTile = ScatterNode.transform.position;
         }
+        else if (currentMode == Mode.Eaten)
+        {
+            targetTile = Respawn.transform.position;
+        }
+        else 
+        {
+            targetTile = RandomTile();
+        }
+        
+        
 
 
 
@@ -393,9 +396,33 @@ public class Ghost : MonoBehaviour
         {
             if (currentNode.valid_Direction[i] != currectDirection * -1) // avoid ghost going in reverse
             {
-                foundNodes[nodeCounter] = currentNode.Neighbours[i];
-                foundNodesDirection[nodeCounter] = currentNode.valid_Direction[i];
-                nodeCounter++;
+                if (currentMode != Mode.Eaten)
+                {
+                    GameObject tile = GetTile(currentNode.transform.position);
+                    if(tile.GetComponent<Tiles>().GhostHouseDoor)
+                    {
+                        if(currentNode.valid_Direction[i] != Vector2.down)
+                        {
+                            foundNodes[nodeCounter] = currentNode.Neighbours[i];
+                            foundNodesDirection[nodeCounter] = currentNode.valid_Direction[i];
+                            nodeCounter++;
+                        }
+                    }
+                    else
+                    {
+                        foundNodes[nodeCounter] = currentNode.Neighbours[i];
+                        foundNodesDirection[nodeCounter] = currentNode.valid_Direction[i];
+                        nodeCounter++;
+                    }
+                }
+                else
+                {
+                    foundNodes[nodeCounter] = currentNode.Neighbours[i];
+                    foundNodesDirection[nodeCounter] = currentNode.valid_Direction[i];
+                    nodeCounter++; //use software design techniques to simply and make more ambiguous 
+                }
+                
+                
             }
         }
 
@@ -425,8 +452,6 @@ public class Ghost : MonoBehaviour
 
 
 
-
-
     //find at tile at Given ghost position and check if that tile has a Node component
     Node GetNodePosition(Vector2 position)
     {
@@ -443,16 +468,12 @@ public class Ghost : MonoBehaviour
         return null;
     }
 
-    GameObject GetPortal(Vector2 Position)
+    GameObject GetTile(Vector2 Position)
     {
         GameObject tile = GameObject.Find("GameBoard").GetComponent<The_Board>().Board[(int)Position.x, (int)Position.y];
         if (tile != null)
         {
-            if (tile.GetComponent<Tiles>().Is_Portal)
-            {
-                GameObject nextPortal = tile.GetComponent<Tiles>().PortalTo;
-                return nextPortal;
-            }
+            return tile;
         }
 
         return null;
@@ -490,9 +511,18 @@ public class Ghost : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("GameObject1 collided with " + col.name);
+
+        if(col.tag == "Player" && currentMode == Mode.Frighten && !isEaten) 
+        {
+            ghostSpeed = EatenSpeed;
+            currentMode = Mode.Eaten;
+            isEaten = true;
+
+        }
+        
 
     }
+
 
     public Vector2 getDirection()
     {
@@ -509,6 +539,8 @@ public class Ghost : MonoBehaviour
         return frightenModeTimer;
     }
 
+
+    
 
 
 }

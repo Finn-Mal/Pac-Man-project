@@ -19,6 +19,10 @@ public class GhostAnimations : MonoBehaviour
     public RuntimeAnimatorController Down;
     public RuntimeAnimatorController frightenGhost;
     public RuntimeAnimatorController endingFrighten;
+    public RuntimeAnimatorController EyesLeft;
+    public RuntimeAnimatorController EyesRight;
+    public RuntimeAnimatorController EyesUp;
+    public RuntimeAnimatorController EyesDown;
 
     // Start is called before the first frame update
     void Start()
