@@ -6055,6 +6055,101 @@ MonoBehaviour:
   Is_Portal: 0
   GhostHouseDoor: 0
   PortalTo: {fileID: 0}
+--- !u!1001 &149171430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1821644799}
+    m_Modifications:
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.91028494
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5424528
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159537943680341245, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_Name
+      value: PacRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb, type: 3}
 --- !u!1 &149209108
 GameObject:
   m_ObjectHideFlags: 0
@@ -13766,7 +13861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_speed: 4
-  initialNode: {fileID: 2067796395}
+  InitalNode: {fileID: 2067796395}
+  RespawnNode: {fileID: 1278103933}
   Orientation: {x: 0, y: 0}
 --- !u!61 &362091539
 BoxCollider2D:
@@ -21621,10 +21717,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 7fb19238be909594cb13b6dd82cf5888, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
-  EyesLeft: {fileID: 0}
-  EyesRight: {fileID: 0}
-  EyesUp: {fileID: 0}
-  EyesDown: {fileID: 0}
+  EyesLeft: {fileID: 9100000, guid: 80d07fa7c9a469d44950267a709d45b9, type: 2}
+  EyesRight: {fileID: 9100000, guid: e35441b83ec096a4ebcc86bdfc364034, type: 2}
+  EyesUp: {fileID: 9100000, guid: 25eb04a4a8c1cda43a177001bc5e577a, type: 2}
+  EyesDown: {fileID: 9100000, guid: 327050f60a06d98458b332ede146a320, type: 2}
 --- !u!95 &589666964
 Animator:
   serializedVersion: 3
@@ -23659,10 +23755,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 2853c687811c1bb4689cbfbb90906026, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
-  EyesLeft: {fileID: 0}
-  EyesRight: {fileID: 0}
-  EyesUp: {fileID: 0}
-  EyesDown: {fileID: 0}
+  EyesLeft: {fileID: 9100000, guid: 80d07fa7c9a469d44950267a709d45b9, type: 2}
+  EyesRight: {fileID: 9100000, guid: e35441b83ec096a4ebcc86bdfc364034, type: 2}
+  EyesUp: {fileID: 9100000, guid: 25eb04a4a8c1cda43a177001bc5e577a, type: 2}
+  EyesDown: {fileID: 9100000, guid: 327050f60a06d98458b332ede146a320, type: 2}
 --- !u!95 &637638690
 Animator:
   serializedVersion: 3
@@ -23721,6 +23817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 3.9
+  EatenSpeed: 5
   StartNode: {fileID: 203035017}
   ScatterNode: {fileID: 590713119}
   Respawn: {fileID: 1357680526}
@@ -36037,6 +36134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localGhost: {fileID: 0}
+  PacmanLives: 3
 --- !u!4 &981879889
 Transform:
   m_ObjectHideFlags: 0
@@ -37703,10 +37801,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 1f45654131552d24f8d198af093e7668, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
-  EyesLeft: {fileID: 0}
-  EyesRight: {fileID: 0}
-  EyesUp: {fileID: 0}
-  EyesDown: {fileID: 0}
+  EyesLeft: {fileID: 9100000, guid: 80d07fa7c9a469d44950267a709d45b9, type: 2}
+  EyesRight: {fileID: 9100000, guid: e35441b83ec096a4ebcc86bdfc364034, type: 2}
+  EyesUp: {fileID: 9100000, guid: 25eb04a4a8c1cda43a177001bc5e577a, type: 2}
+  EyesDown: {fileID: 9100000, guid: 327050f60a06d98458b332ede146a320, type: 2}
 --- !u!95 &1041049306
 Animator:
   serializedVersion: 3
@@ -47101,6 +47199,35 @@ Transform:
   m_Father: {fileID: 740306008}
   m_RootOrder: 241
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1278103931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 149171430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1278103932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 56794507174876387, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 149171430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278103933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278103931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0731ad7d8368e72488406092281726dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Neighbours:
+  - {fileID: 1278103933}
+  valid_Direction:
+  - {x: 1, y: 0}
+  travelPoint: 1
 --- !u!1 &1284127705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7525739103146465514, guid: 2b431d2a3e2ca6a4bbc999bde2f698fb,
@@ -65163,6 +65290,7 @@ Transform:
   - {fileID: 231551990}
   - {fileID: 1448370463}
   - {fileID: 1961866251}
+  - {fileID: 1278103932}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67044,10 +67172,10 @@ MonoBehaviour:
   Down: {fileID: 9100000, guid: 37ee235cc735110438cac1c68046d8f0, type: 2}
   frightenGhost: {fileID: 9100000, guid: 4d4af272e0aa283478c08768e0416bf6, type: 2}
   endingFrighten: {fileID: 9100000, guid: 4f76d117fdc889544a8a974087a62bf6, type: 2}
-  EyesLeft: {fileID: 0}
-  EyesRight: {fileID: 0}
-  EyesUp: {fileID: 0}
-  EyesDown: {fileID: 0}
+  EyesLeft: {fileID: 9100000, guid: 80d07fa7c9a469d44950267a709d45b9, type: 2}
+  EyesRight: {fileID: 9100000, guid: e35441b83ec096a4ebcc86bdfc364034, type: 2}
+  EyesUp: {fileID: 9100000, guid: 25eb04a4a8c1cda43a177001bc5e577a, type: 2}
+  EyesDown: {fileID: 9100000, guid: 327050f60a06d98458b332ede146a320, type: 2}
 --- !u!95 &1880415319
 Animator:
   serializedVersion: 3

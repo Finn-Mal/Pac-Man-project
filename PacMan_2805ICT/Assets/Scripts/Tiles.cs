@@ -19,7 +19,7 @@ public class Tiles : MonoBehaviour
         Is_Eaten = set;
     }
 
-    public bool checkEaten()
+    public bool getEaten()
     {
         return Is_Eaten;
     }

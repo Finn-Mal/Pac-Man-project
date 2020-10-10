@@ -152,6 +152,7 @@ public class Ghost : MonoBehaviour
             {
                 currentNode = Respawn;
                 previousNode = currentNode;
+                isEaten = false;
                 currentMode = Mode.Chase;
                 nextNode = Respawn.Neighbours[0];
                 currectDirection = Vector2.up;
@@ -512,11 +513,19 @@ public class Ghost : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
 
-        if(col.tag == "Player" && currentMode == Mode.Frighten && !isEaten) 
+        if(col.tag == "Player" ) 
         {
-            ghostSpeed = EatenSpeed;
-            currentMode = Mode.Eaten;
-            isEaten = true;
+            if(currentMode == Mode.Frighten && !isEaten)
+            {
+                ghostSpeed = EatenSpeed;
+                currentMode = Mode.Eaten;
+                isEaten = true;
+            }
+            else
+            {
+                GameObject.Find("GameBoard").GetComponent<The_Board>().Respawn();
+            }
+            
 
         }
         
@@ -540,7 +549,40 @@ public class Ghost : MonoBehaviour
     }
 
 
-    
+    public void RespawnGhost()
+    {
+        
+        transform.position = StartNode.transform.position;
+
+        GhostReleaseTimer = 0;
+        inGhostHouse = true;
+
+        stateTimer = 0;
+
+        stateIteration = 0;
+
+        currentMode = Mode.Scatter;
+
+        currentNode = StartNode;
+
+        previousNode = currentNode;
+        currentscatterModePhase = scatterModePhase;
+
+        ghostSpeed = movespeed;
+
+        ReleaseGhost();
+
+        if (inGhostHouse)
+        {
+            currectDirection = Vector2.up;
+            nextNode = currentNode.Neighbours[0];
+        }
+        else if (!inGhostHouse)
+        {
+            currectDirection = Vector2.left;
+            nextNode = SelecteNextNode();
+        }
+    }
 
 
 }

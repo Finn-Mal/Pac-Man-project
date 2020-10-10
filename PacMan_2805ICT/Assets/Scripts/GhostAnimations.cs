@@ -43,7 +43,7 @@ public class GhostAnimations : MonoBehaviour
     
     public void UpdateAnimation()
     {
-        if (ghostMode != Ghost.Mode.Frighten)
+        if (ghostMode == Ghost.Mode.Chase || ghostMode == Ghost.Mode.Scatter)
         {
 
             
@@ -76,6 +76,28 @@ public class GhostAnimations : MonoBehaviour
             }
 
         }
+        else if(ghostMode == Ghost.Mode.Eaten)
+        {
+            Debug.Log("GHOST HAS BEEN EATEN");
+            if (direction == Vector2.left)
+            {
+                transform.GetComponent<Animator>().runtimeAnimatorController = EyesLeft;
+            }
+            if (direction == Vector2.right)
+            {
+                transform.GetComponent<Animator>().runtimeAnimatorController = EyesRight;
+            }
+            if (direction == Vector2.up)
+            {
+                transform.GetComponent<Animator>().runtimeAnimatorController = EyesUp;
+            }
+            if (direction == Vector2.down)
+            {
+                transform.GetComponent<Animator>().runtimeAnimatorController = EyesDown;
+            }
+        }
+
+
     }
 
 

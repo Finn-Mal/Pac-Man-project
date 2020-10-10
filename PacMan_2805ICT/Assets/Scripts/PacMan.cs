@@ -10,7 +10,9 @@ public class PacMan : MonoBehaviour
 
     public float move_speed = 4.0f;
 
-    public Node initialNode;
+    public Node InitalNode;
+
+    public Node RespawnNode;
 
     private Node currentNode, nextNode, previousNode; // node of Pacman's current position (which pellet Node is he on)
 
@@ -21,18 +23,14 @@ public class PacMan : MonoBehaviour
     private Animator anim;
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
 
-        //Node PacmanNode = GetThePositionAtNode(transform.position); // Greating local node position of Pac Man in relation to all the Board
 
-        /*if (PacmanNode != null)
-        {
-            currentNode = PacmanNode;
-        }*/
-
-        currentNode = initialNode;
+        currentNode = InitalNode;
 
         direction = Vector2.left;
         changeTargetNode(direction);
@@ -41,6 +39,22 @@ public class PacMan : MonoBehaviour
 
         anim = GetComponent<Animator>();
     }
+
+    public void Respawn()
+    {
+        transform.position = RespawnNode.transform.position;
+
+        currentNode = InitalNode;
+
+        direction = Vector2.left;
+
+        Orientation = direction;
+
+        nextDirection = direction;
+
+        changeTargetNode(direction);
+    }
+
 
     // Update is called once per frame
     void Update()

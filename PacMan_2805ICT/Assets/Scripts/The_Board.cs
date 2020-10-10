@@ -22,6 +22,8 @@ public class The_Board : MonoBehaviour
 
     public Ghost localGhost;
 
+    public int PacmanLives = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,10 +63,10 @@ public class The_Board : MonoBehaviour
             if (Tilecomponent != null )
             {
 
-                if (Tilecomponent.Is_Pellet || Tilecomponent.Is_Energizer)
+                if ((Tilecomponent.Is_Pellet || Tilecomponent.Is_Energizer) && !Tilecomponent.getEaten())
                 {
                     
-                    if(Tilecomponent.Is_Energizer && !Tilecomponent.checkEaten())
+                    if(Tilecomponent.Is_Energizer )
                     {
                         foreach(GameObject ScaredGhost in Ghosts)
                         {
@@ -76,6 +78,7 @@ public class The_Board : MonoBehaviour
                     Tilecomponent.setEaten(true);
                     GameScore += 10;
                     pelletsRemain += 1;
+
 
                 }
 
@@ -106,8 +109,26 @@ public class The_Board : MonoBehaviour
 
     void GameStatus()
     {
-        if(pelletsRemain == 225)
+        if(pelletsRemain == 244)
         {
+
+        }
+
+        if(PacmanLives == 0)
+        {
+            //Gameover and return to main menu
+        }
+
+    }
+
+    public void Respawn()
+    {
+        PacmanLives -= 1;
+        ThePacman.GetComponent<PacMan>().Respawn();
+        foreach (GameObject ghost in Ghosts)
+        {
+
+            ghost.GetComponent<Ghost>().RespawnGhost();
 
         }
     }
