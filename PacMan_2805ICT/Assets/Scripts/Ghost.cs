@@ -521,7 +521,7 @@ public class Ghost : MonoBehaviour
                 currentMode = Mode.Eaten;
                 isEaten = true;
             }
-            else
+            if(!isEaten)
             {
                 GameObject.Find("GameBoard").GetComponent<The_Board>().Respawn();
             }

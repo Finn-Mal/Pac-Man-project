@@ -1,0 +1,173 @@
+commit 5114b7cadfdcfdf9edd6c05a65788f798297ec0e
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sun Oct 11 12:42:37 2020 +1000
+
+    Main Menu and Gamescore UI
+    
+    Score decrements 1 point per second while player has not collected all pellets
+
+commit 583374b2ccadb0081714171a479d021ca3e52b92
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sun Oct 11 07:27:25 2020 +1000
+
+    Respawn of Ghost and Pacman implemented
+
+commit 5a8828d9667f371c6e0bb765f4f840ce0c60c7db
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Oct 10 16:42:04 2020 +1000
+
+    Ghost return and respawn from home
+    
+    Ghost GUI for eaten and respawn need to be added
+
+commit 9f0d1d1f1de5ccea1ae47a0123b5b8d3254b999f
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Oct 10 05:21:46 2020 +1000
+
+    Animation responsibility seperated
+    
+    GhostAnimation script holds responsibility for updating ghost gui
+
+commit d49df2c3c8a88b6160ef5024a933b0bbf40bba27
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Fri Oct 9 18:57:24 2020 +1000
+
+    Testing: Seperating Class
+    
+    Implelementing seperation of concern with UI animation updates for Ghost
+
+commit a7f9e295e45b259dd6a24f6ea9aefbf99bfc72b5
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Thu Oct 8 22:05:54 2020 +1000
+
+    Ghost Mode: Frighten
+    
+    Ghost transition into frighten mode.
+    
+    Working on the logic
+    
+    Logic:
+    
+    Reverse current direction and return to previous visited node
+    
+    At previous node, check all neighbouring nodes + directions, randomly select direction and node
+
+commit 12b687851589cb7690f8d7fc3b192fbb80d722cd
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Thu Oct 8 16:40:20 2020 +1000
+
+    All ghost ai completed
+    
+    Blinky Inky Pinky and Clyde all scatter and chase mode completed
+
+commit 6974c27f7c31010f9ca457ec19d77547ceb8d9dc
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Thu Oct 8 05:04:37 2020 +1000
+
+    Basic Ghost AI Complete
+
+commit 1ab2a3cb23c75d46e50229309bf833d09ffb7790
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Oct 7 19:11:34 2020 +1000
+
+    Basic Ghost AI started
+
+commit 16e352029dc862d948fb04fa98524035b95f12d5
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Thu Sep 24 11:29:35 2020 +1000
+
+    Movement working with Tags
+    
+    Movement for Pacman branch to branch works.
+    
+    However, going to test collision version to potentially save development time.
+
+commit 46c64c520f548e52e014a819291598576d74704e
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Fri Sep 18 11:59:32 2020 +1000
+
+    Update Pacman
+    
+    Pacman node to node movement using FindWithTag() full operation. Pellets visual will now disappear when Pacman cross them
+
+commit 864d1e7ed09ad441c7b1e42789c0d9dbf70763a1
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Sep 9 16:13:49 2020 +1000
+
+    Movement via nodes completely functional.
+
+commit 997e17ce351d5a3d83fe919547daac07710f4a7c
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Sep 9 07:56:21 2020 +1000
+
+    Latest Update: Current master before creating branch
+    
+    Node to Node movement is not functioning. Going to attempt a different method and see if that works
+
+commit 64b686983084cc74f20efee9239a399e91082892
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Sep 2 15:01:27 2020 +1000
+
+    Simple Update
+
+commit 07bd65420d0063dc5f820512483116c093cd0e9c
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Sep 2 13:08:32 2020 +1000
+
+    All pellet nodes allocated scripted
+    
+    All Neighbour elemetns and Valid Directions filled for each "node"
+
+commit 4b909611ea3d46144a29a11d6d6a747d5a609d51
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Wed Sep 2 11:13:15 2020 +1000
+
+    Pellet Nodes - Vertex addition begin
+
+commit d21080f271dba3bbfc89e6e88391f4bfb0f4ab9b
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sun Aug 9 15:33:27 2020 +1000
+
+    Update PacMan.cs
+    
+    Version 1.0: Basically user controller of Pac-Man
+
+commit 702855bc0d8c1df7b99d62d03a0dc71a229b82f3
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sun Aug 9 11:30:47 2020 +1000
+
+    Pacman Maze level1 Update
+    
+    PacMan now has working animation
+
+commit 4aca9e1b2db5d412128309f2d40961c3b6a0f0fc
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sun Aug 9 09:53:08 2020 +1000
+
+    PacMan Maze level 1_ All Pellets and Pac Man
+
+commit a6a0e147ca5f365ac701d8c8a58dd498904a8d17
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Aug 8 21:31:32 2020 +1000
+
+    Pac-Man level 1 Maze: Pelletless
+
+commit f5ca4d3a630f2de46716f0e414240afcffa4d077
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Aug 8 17:39:08 2020 +1000
+
+    Pac-Maze (hollow)
+    
+    First prototype of pace maze: only exterior
+
+commit ee3e0d5442679a0c8a80b7acc5290614d0330150
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Aug 8 13:18:07 2020 +1000
+
+    Inital empty pacman project
+
+commit fd7b9db35db4387215faf8123427628d0ce4dea3
+Author: Finn-Mal <68063595+Finn-Mal@users.noreply.github.com>
+Date:   Sat Aug 8 13:03:44 2020 +1000
+
+    Initial commit
